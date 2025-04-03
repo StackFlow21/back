@@ -1,0 +1,12 @@
+-- CreateTable
+CREATE TABLE "Question" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "title" TEXT NOT NULL,
+    "body" TEXT NOT NULL,
+    "tags" TEXT NOT NULL,
+    "language" TEXT NOT NULL DEFAULT '',
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "views" INTEGER NOT NULL DEFAULT 0,
+    "votes" INTEGER NOT NULL DEFAULT 0,
+    "answers" INTEGER NOT NULL DEFAULT 0
+);
